@@ -5,7 +5,7 @@ def read_csv(file):
     dataSet = pd.read_csv(file)
     text = "Todas as linhas da tabela:"
     for index, line in dataSet.iterrows():  
-       linha += f'\n{line["Coluna1"]} {line["Coluna2"]} {line["Coluna3"]}'
+       text += f'\n{line["Coluna1"]} {line["Coluna2"]} {line["Coluna3"]}'
     writeFile(text)
 
 def create_file():
